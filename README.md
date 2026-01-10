@@ -31,16 +31,8 @@ Both services are containerized and orchestrated using **Docker Compose**.
 ---
 
 ## 🏗️ Architecture
-graph TD
-    Client[Client / Postman]
-    Spring[Spring Boot API]
-    ML[ML Anomaly Service<br/>FastAPI]
-    DB[MongoDB Atlas]
+<img width="1536" height="1024" alt="systemlogs-anomaly-detection" src="https://github.com/user-attachments/assets/cdee5e7f-064c-4b39-80cf-fb0143a0e65e" />
 
-    Client -->|JSON| Spring
-    Spring -->|REST Call| ML
-    ML -->|Prediction| Spring
-    Spring -->|Persist| DB
 
 ## 🔄 Request Flow
 1. Client sends system metrics JSON
