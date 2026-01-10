@@ -119,5 +119,8 @@ Body JSON
   "status": "OK"
 }
 
-OUTPUT
+### OUTPUT
 <img width="1366" height="768" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/9272624a-1f32-4781-9cbe-9635a23a4094" />
+
+### Changes to be made
+In the `spring-anomaly-api`, in the `application.properties` file, the MongoDB Atlas Username, Password, Cluster Name and Collection Name should be changed as per your configuration.
