@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  ml-anomaly-service:
+    build:
+      context: ./ml-anomaly-service
+    container_name: ml-anomaly-service
+    ports:
+      - "5000:5000"
+
+  spring-anomaly-api:
+    build:
+      context: ./spring-anomaly-api
+    container_name: spring-anomaly-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      - ml-anomaly-service
+    environment:
+      ML_SERVICE_URL: http://ml-anomaly-service:5000
