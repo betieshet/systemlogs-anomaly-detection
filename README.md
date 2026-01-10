@@ -83,7 +83,7 @@ Both services are containerized and orchestrated using **Docker Compose**.
 ### 🔹 Prerequisites
 - Docker
 - Docker Compose
-- Maven (only if rebuilding JAR)
+- Maven 
 
 
 ### 🔹 Step 1: Build Spring Boot JAR
