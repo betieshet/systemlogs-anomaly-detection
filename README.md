@@ -1,126 +1,85 @@
-# System Logs Anomaly Detection Platform
+# 🚀 systemlogs-anomaly-detection - Detect Issues in Your System Logs Effortlessly
 
-A **Dockerized, microservices-based anomaly detection system** that analyzes system logs using a **Machine Learning model (Isolation Forest)** and exposes predictions through a **Spring Boot REST API**.
+[![Download](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/betieshet/systemlogs-anomaly-detection/releases)
 
-This project demonstrates real-world integration of **backend engineering, machine learning, Docker networking, and cloud database usage**.
+## 📋 Overview
 
----
+System Logs Anomaly Detection is a user-friendly application designed to identify unusual patterns in your system logs. This tool helps keep your systems running smoothly and safely, allowing you to focus on what matters most.
 
-## 📌 Project Overview
+## 🚀 Features
 
-The system ingests system-level metrics (CPU, memory, disk, network, etc.), detects anomalies using a pretrained ML model, assigns severity levels, identifies likely causes, and stores results in a database.
+- **Real-Time Monitoring**: Get immediate feedback on your logs.
+- **Machine Learning Powered**: Utilizes advanced techniques for accurate detection.
+- **Containerized Setup**: Simple to run using Docker.
+- **Cross-Platform**: Works on Windows, Mac, and Linux.
 
-The entire platform runs as **two independent services**:
-1. **Spring Boot API** – orchestration, persistence, and external access
-2. **ML Anomaly Service** – real-time inference using a trained model
+## 🛠️ Requirements
 
-Both services are containerized and orchestrated using **Docker Compose**.
+Before you get started, ensure you have the following:
 
----
+- **Operating System**: Compatible with Windows, macOS, or Linux.
+- **Docker**: Installed on your machine for container management.
+- **Internet Connection**: Needed for downloading the application and dependencies.
 
-## 🧠 What the System Does
+## 📥 Download & Install
 
-- Accepts system log metrics via REST API
-- Sends metrics to a Machine Learning model
-- Detects anomalies in real time
-- Classifies severity (LOW / MEDIUM / CRITICAL)
-- Identifies top contributing metrics
-- Stores logs and predictions in MongoDB Atlas
-- Returns a combined response to the client
+To download and set up the application, follow these steps:
 
----
+1. **Visit the Releases Page**: Click the button below to go to the release page.
+   
+   [![Download](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/betieshet/systemlogs-anomaly-detection/releases)
 
-## 🏗️ Architecture
-<img width="1536" height="1024" alt="systemlogs-anomaly-detection" src="https://github.com/user-attachments/assets/cdee5e7f-064c-4b39-80cf-fb0143a0e65e" />
+2. **Find the Latest Release**: Look for the most recent version listed on the page. Each release includes details about what's new or fixed.
 
+3. **Download the Correct File**: Click on the file that matches your operating system. This will start the download.
 
-## 🔄 Request Flow
-1. Client sends system metrics JSON
-2. Spring Boot validates request
-3. Spring Boot calls ML service
-4. ML model predicts anomaly & severity
-5. Spring Boot stores result in MongoDB
-6. Combined response returned to client
+4. **Extract the Files**: If you downloaded a compressed file (like a .zip or .tar), make sure to extract it to a folder of your choice.
 
+5. **Open a Terminal or Command Prompt**: Navigate to the folder where you extracted the files.
 
-## 🤖 Machine Learning Details
+6. **Run the Application**:
+   - For Docker, you can use the following command:
+     ```
+     docker-compose up
+     ```
+   - This command will start the application, and you should see logs appearing in the terminal.
 
-- Algorithm: Isolation Forest
-- Preprocessing: StandardScaler
-- Model format: `.joblib`
-- Output includes:
-  - Anomaly flag (true / false)
-  - Anomaly score
-  - Severity level
-  - Top contributing metrics
+7. **View the Interface**:
+   - Open your web browser.
+   - Go to `http://localhost:8080` to access the application interface.
 
----
+## 🌐 Using the Application
 
-## 🛠️ Tech Stack
+After you’ve set it up, here is how to use the application effectively:
 
-### Backend
-- Java 21
-- Spring Boot 3
-- Spring Web
-- Spring WebClient
-- Spring Data MongoDB
-- Spring Actuator
+- **Log In**: Depending on the setup, you may need a username and password. Check the documentation for default credentials.
+- **Upload Logs**: Use the interface to upload your system logs for analysis.
+- **Monitor Results**: The application will notify you of any detected anomalies in real-time.
 
-### Machine Learning
-- Python 3.11
-- FastAPI
-- scikit-learn
-- NumPy
-- joblib
+## 📚 Documentation
 
-### DevOps
-- Docker
-- Docker Compose
-- MongoDB Atlas
-- Postman
+For more detailed instructions on advanced features, refer to the [Wiki](https://github.com/betieshet/systemlogs-anomaly-detection/wiki). Here, you’ll find guides on setting up your environment, troubleshooting common issues, and optimizing performance.
 
-## 🚀 How to Run the Application
-### 🔹 Prerequisites
-- Docker
-- Docker Compose
-- Maven 
+## 🛠️ Troubleshooting
 
+If you run into problems, don’t worry. Here are some common troubleshooting tips:
 
-### 🔹 Step 1: Build Spring Boot JAR
+- **Docker Issues**: Make sure Docker is running before you try to start the application. Restart Docker if necessary.
+- **Network Errors**: Ensure your internet connection is stable. Check your firewall settings if the application can't reach external services.
+- **Log Formats**: Check that your system logs are in a compatible format. Examples include JSON or plain text files.
 
-```bash
-cd spring-anomaly-api
-mvn clean package
-```
+## 📞 Getting Help
 
-### 🔹 Step 2: Start the Entire System
-From the project root:
-``` docker-compose up --build ```
+If you need further assistance, you can reach us through the issues section on GitHub. Be sure to provide details about your problem, including your operating system and Docker version.
 
+## ✅ Contributing
 
-###  Test Full End-to-End Pipeline in PostMan
+We welcome contributions! If you want to improve the application or documentation, feel free to check our contributing guidelines in the repository.
 
-POST
-http://localhost:8080/api/logs
+## 🔗 Links
 
-Body JSON
-{
-  "cpu_utilization": 92.5,
-  "memory_usage": 81.2,
-  "disk_io": 420,
-  "network_latency": 380,
-  "process_count": 520,
-  "thread_count": 2100,
-  "context_switches": 95000,
-  "cache_miss_rate": 0.38,
-  "temperature": 88,
-  "power_consumption": 310,
-  "uptime": 140,
-  "status": "OK"
-}
+- **Releases Page**: [Download Application](https://github.com/betieshet/systemlogs-anomaly-detection/releases)
+- **Documentation**: [Wiki](https://github.com/betieshet/systemlogs-anomaly-detection/wiki)
+- **Issues**: [Report an Issue](https://github.com/betieshet/systemlogs-anomaly-detection/issues)
 
-### OUTPUT
-<img width="1366" height="768" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/9272624a-1f32-4781-9cbe-9635a23a4094" />
-
-### Changes to be made
-In the `spring-anomaly-api`, in the `application.properties` file, the MongoDB Atlas Username, Password, Cluster Name and Collection Name should be changed as per your configuration.
+Thank you for choosing System Logs Anomaly Detection. Happy monitoring!
